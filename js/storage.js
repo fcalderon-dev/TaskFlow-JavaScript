@@ -13,13 +13,11 @@ export function cargarTareas() {
 
     const tareasGuardadas = localStorage.getItem("taskflow");
 
-
     if (tareasGuardadas) {
 
         return JSON.parse(tareasGuardadas);
 
     }
-
 
     return [];
 

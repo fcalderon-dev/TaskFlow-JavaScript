@@ -92,6 +92,11 @@ function actualizarContadores() {
 
         const fechaLimite = new Date(fecha);
 
+        if (isNaN(fechaLimite)) {
+        contador.textContent = "";
+        return;
+}
+
         const ahora = new Date();
 
 
