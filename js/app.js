@@ -33,6 +33,7 @@ function renderizarTareas() {
         const tarjeta = document.createElement("div");
         tarjeta.classList.add("tarea");
         if (tarea.estado) {
+            console.log("Tarea completada renderizando:", tarea.descripcion);
             tarjeta.classList.add("completada");
         }
 
@@ -169,7 +170,7 @@ listaTareas.addEventListener("click", (e) => {
 
     const id = Number(e.target.dataset.id);
 
-    if (e.target.classList.contains("btnCompletar")) {
+if (e.target.classList.contains("btnCompletar")) {
 
     gestor.cambiarEstado(id);
 
@@ -177,7 +178,7 @@ listaTareas.addEventListener("click", (e) => {
         gestor.mostrarTareas()
     );
 
-
+    renderizarTareas();
 
 }
 

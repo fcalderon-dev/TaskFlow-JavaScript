@@ -16,8 +16,8 @@ export class Tarea {
      * Cambia el estado de la tarea entre pendiente y completada.
      */
     cambiarEstado() {
-
         this.estado = !this.estado;
+
     }
 
     /**
