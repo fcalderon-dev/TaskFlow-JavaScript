@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>📋 TaskFlow</h1>
+
+        <!-- Formulario para crear nuevas tareas -->
+        <form id="formTarea">
+
+            <div class="campo">
+                <label for="descripcion">
+                    Descripción
+                </label>
+
+                <input
+                    type="text"
+                    id="descripcion"
+                    placeholder="Escribe una tarea..."
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="fecha">
+                    Fecha límite
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                >
+            </div>
+
+            <button type="submit">
+                Agregar tarea
+            </button>
+
+        </form>
+
+        <p id="contadorCaracteres">
+            0 caracteres
+        </p>
+
+        <div id="mensaje"></div>
+
+        <hr>
+
+        <h2>Mis tareas</h2>
+
+        <div id="listaTareas">
+
+        </div>
+
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+
+</html>
